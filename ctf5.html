@@ -1,0 +1,1 @@
+# Bugku CTF - GET<br/><br/>## 题目信息<br/>- 平台：Bugku<br/>- 类型：Web<br/>- 考点：HTTP GET 请求、URL 参数传递<br/><br/>## 1. 现象观察<br/>访问环境后，页面提示需要用 GET 方式提交指定参数。<br/><br/>## 2. 利用过程<br/>根据提示构造 URL：浏览器访问后直接返回 Flag。<br/><br/>## 3. 命令行验证<br/>```bash<br/>curl "http://目标地址/?what=flag"
