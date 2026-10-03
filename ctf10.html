@@ -1,0 +1,1 @@
+# Bugku CTF - [+-<>]<br/><br/>## 题目信息<br/>- 平台：Bugku<br/>- 类型：Crypto<br/>- 考点：Brainfuck 语言解码<br/><br/>## 1. 现象观察<br/>题目名和描述均为 `+-<>[].,` 字符，典型 Brainfuck 特征。<br/><br/>## 2. 利用过程<br/>复制题目描述中的全部字符，放入在线 Brainfuck 解释器运行，或使用 Python 脚本解码。<br/><br/>```python<br/>import brainfuck<br/>bf_code = "++++++++++[->..."<br/>print(brainfuck.evaluate(bf_code))
